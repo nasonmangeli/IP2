@@ -1,0 +1,18 @@
+
+.landing {
+background-image: url("../assets/backgrounds/landing.jpg");
+background-size: 100%;
+text-align: center;
+color: white;
+background-repeat: no-repeat;
+padding-bottom: 215px;
+font-size: 25px;
+}
+.landing img {
+  padding-top:100px;
+}
+
+div .foods{
+  background-image: url("../assets/backgrounds/foodsBg.jpg");
+  background-size: 100%;
+}
