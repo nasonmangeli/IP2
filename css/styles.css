@@ -1,18 +1,14 @@
-
+.container {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
 .landing {
-background-image: url("../assets/backgrounds/landing.jpg");
-background-size: 100%;
-text-align: center;
-color: white;
-background-repeat: no-repeat;
-padding-bottom: 215px;
-font-size: 25px;
-}
-.landing img {
-  padding-top:100px;
-}
-
-div .foods{
-  background-image: url("../assets/backgrounds/foodsBg.jpg");
-  background-size: 100%;
+  background-image: url("../assets/backgrounds/landing.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom:200px;
+  font-size: 25px;
 }
