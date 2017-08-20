@@ -1,84 +1,187 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
     <script src="js/scripts.js"></script>
       <title></title>
   </head>
   <body>
-    <div class="container">
-      <div class="landing">
-        <!--the logo and background img-->
-        <img src="assets/logoBig.png" alt="logo">
-        <p>We Provide The Best Food </p>
-        <p>At The <strong>Right Price</strong></p>
-      </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <p>Happy Hour</p>
-            <p>Party Time</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="landing">
+          <div class="navbar">
+            <button id="clickme"><img src="assets/nav.png" alt="nav"></button>
           </div>
-          <div class="col-md-3">
-            <div class="breakfast">
-            <p>Breakfast</p>
+          <div class="navbar-menu">
+            <div class="row">
+              <div class="col-md-4">
+                <h1><a href="#menu">Menu</a></h1>
+              </div>
+              <div class="col-md-4">
+                <h1><a href="#events">Events</a></h1>
+              </div>
+              <div class="col-md-4">
+                <h1><a href="#contacts">Contacts</a></h1>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
+
+          <img class="logo" src="assets/logoBig.png" alt="logo">
+          <p>We Provide The Best Food </p>
+          <p>At The <strong>Right Price</strong></p>
+        </div>
+      </div>
+
+      <a name="events"><div class="row"></a>
+        <div class="col-md-3">
+          <h2 class="happy-hour">Happy Hour</p>
+          <h2 class="party-time">Party Time</p>
+        </div>
+        <div class="col-md-3">
+          <div class="breakfast">
+            <p>Breakfast</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="lunch">
             <p>Lunch</p>
           </div>
-          <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+          <div class="dinner">
             <p>Dinner</p>
           </div>
         </div>
+      </div>
 
   <!--this is the fast food row-->
       <div class="row">
         <div class="col-md-6">
-          <img src="assets/fastFood1.jpg" alt="fastfood1"><img src="assets/fastFood2.jpg" alt="fastfood2">
+          <div class="well">
+            <img class="img-responsive" src="assets/fastFood1.jpg" alt="fastfood1">
+            <img class="img-responsive" src="assets/fastFood2.jpg" alt="fastfood2">
+          </div>
         </div>
         <div class="col-md-6">
-          <h3>Fast Food</h3>
-          <h4>You'll love our delicious fast food</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
+          <div class="fast-food-text">
+            <h3>Fast Food</h3>
+            <h4>You'll love our delicious fast food</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <button type="button" class="btn btn-default">VIEW GALLERY <span class="glyphicon glyphicon-arrow-right"></span></button>
+          </div>
         </div>
       </div>
 
   <!--this is the drinks row-->
-
       <div class="row">
         <div class="col-md-6">
-          <h3>Drinks</h3>
-          <h4>We also produce delicious drinks</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <div class="drinks-text">
+            <h3>Drinks</h3>
+            <h4>We also produce delicious drinks</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <button type="button" class="btn btn-default">VIEW GALLERY <span class="glyphicon glyphicon-arrow-right"></span></button>
+          </div>
+
         </div>
         <div class="col-md-6">
-          <img src="assets/drink1.jpg" alt="drink1"><img src="assets/drink2.jpg" alt="drink2">
+          <div class="drinks-img">
+            <div class="well">
+              <img src="assets/drink1.jpg" alt="drink1"><span><img src="assets/drink2.jpg" alt="drink2"></span>
+            </div>
+          </div>
         </div>
       </div>
-
 
   <!--this is the menu row-->
-      <div class="row">
 
+      <div class="row">
+        <a name="menu"><div class="menu"></a>
+          <div class="well">
+
+          <ul class="nav nav-tabs nav-justified" role="tab-list">
+            <li class="active"><a data-toggle="tab" href="#fastfood">Fast Food</a></li>
+            <li><a data-toggle="tab" href="#drinks">Drinks</a></li>
+            <li><a data-toggle="tab" href="#chicken">Chicken</a></li>
+            <li><a data-toggle="tab" href="#rice">Rice</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="fastfood" class="tab-pane fade in active">
+              <img src="assets/fastfood/chickenBurger.jpg" alt="chickenburger">
+              <img src="assets/fastfood/beefBurger.jpg" alt="beefBurger">
+              <img src="assets/fastfood/chickenPizza.jpg" alt="chickenPizza">
+            </div>
+            <div id="drinks" class="tab-pane fade">
+              <h3>drinks</h3>
+              <p>this  is a just a test run</p>
+            </div>
+            <div id="chicken" class="tab-pane fade">
+              <h3>chicken</h3>
+              <p>jaljlajl;jlajljaljlaljaljljaljlkajlajlkjaljaljjaljl;jdljfljdljflj</p>
+            </div>
+            <div id="rice" class="tab-pane fade">
+              <h3>rice</h3>
+              <p>ljldjkdjdkjksjljsklsjlajlallalajkajlajl</p>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
+
 
   <!--this is the row for our happy customers and about menu-->
       <div class="row">
+        <div class="happy-customers well">
 
+          <div class="row">
+          <div class="col-md-7">
+           <h4>Our Happy Customers</h3>
+            <p>George Richard</p>
+            <p>The menu is awesome, there foods are not only great but also in the right price. I'll highly recommend them :)</p>
+            <span class="glyphicon glyphicon-menu-left"></span><img src="assets/customers/p1.png" alt="p1">
+            <img src="assets/customers/p2.png" alt="p2">
+            <img src="assets/customers/p3.png" alt="p3"><span class="glyphicon glyphicon-menu-right"></span>
+          </div>
+          <div class="col-md-5">
+            <h4><strong>About Menu</strong></h4>
+            <p>We are menu a little team of 7 members</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </div>
+          </div>
+
+      </div>
       </div>
 
   <!--this contains the email subscription row-->
       <div class="row">
+        <div class="subscription">
+        <p>Get our daily food items delivered to your email</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for=""></label>
+            <input type="email" id="email" placeholder="Your email" class="form-control">
+            <button class="btn btn-default" type="submit">Subscribe</button>
+          </form>
 
+        </div>
+        </div>
       </div>
 
   <!--this contains the contact info-->
       <div class="row">
+        <a name="contacts"><div class="contact-bar"></a>
+          <img src="assets/footerlogos/logo_white.png" alt="logo"><span>MENU</span>
+          <h4>Thats What We Are</h4>
+          <img src="assets/footerlogos/facebook.png" alt="facebook">
+          <img src="assets/footerlogos/twitter.png" alt="twitter">
+          <img src="assets/footerlogos/pinterest.png" alt="pintrest">
+          <p>2016 Menu Restaurant</p>
 
+        </div>
       </div>
     </div>
   </body>
