@@ -72,7 +72,7 @@
             <h3>Fast Food</h3>
             <h4>You'll love our delicious fast food</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <button type="button" class="btn btn-default">VIEW GALLERY <span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button type="button" class="btn btn-default">VIEW GALLERY<span>&#8594;</span></button>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
             <h3>Drinks</h3>
             <h4>We also produce delicious drinks</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <button type="button" class="btn btn-default">VIEW GALLERY <span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button type="button" class="btn btn-default">VIEW GALLERY <span>&#8594;</span></button>
           </div>
 
         </div>
@@ -104,20 +104,69 @@
           <div class="well">
 
           <ul class="nav nav-tabs nav-justified" role="tab-list">
-            <li class="active"><a data-toggle="tab" href="#fastfood">Fast Food</a></li>
-            <li><a data-toggle="tab" href="#drinks">Drinks</a></li>
-            <li><a data-toggle="tab" href="#chicken">Chicken</a></li>
-            <li><a data-toggle="tab" href="#rice">Rice</a></li>
+            <li class="col-md-3 active"><a data-toggle="tab" href="#fastfood">Fast Food</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#drinks">Drinks</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#chicken">Chicken</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#rice">Rice</a></li>
           </ul>
           <div class="tab-content">
             <div id="fastfood" class="tab-pane fade in active">
-              <img src="assets/fastfood/chickenBurger.jpg" alt="chickenburger">
-              <img src="assets/fastfood/beefBurger.jpg" alt="beefBurger">
-              <img src="assets/fastfood/chickenPizza.jpg" alt="chickenPizza">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/chickenBurger.jpg" alt="chickenburger">
+                      <p>Chicken Burger</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/beefBurger.jpg" alt="beefBurger">
+                      <p>Beef Burger</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/chickenPizza.jpg" alt="chickenPizza">
+                      <p>Chicken Pizza</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/fries.jpg" alt="fries">
+                      <p>Fries</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></a>
+              </div>
+
+
+
             </div>
             <div id="drinks" class="tab-pane fade">
-              <h3>drinks</h3>
-              <p>this  is a just a test run</p>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/lemonade.jpg" alt="lemonade">
+                      <p>Lemonade</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/Rose Spritzer.jpeg" alt="Rose Spritzer">
+                      <p>Rose Spritzer</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/Strawberry-Lime-Slush.jpg" alt="StrawberryLimeSlush">
+                      <p>Strawberry Lime Slush</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></a>
+              </div>
+
             </div>
             <div id="chicken" class="tab-pane fade">
               <h3>chicken</h3>
@@ -162,7 +211,7 @@
         <p>Get our daily food items delivered to your email</p>
         <form class="form-inline">
           <div class="form-group">
-            <label for=""></label>
+            <label for="email"></label>
             <input type="email" id="email" placeholder="Your email" class="form-control">
             <button class="btn btn-default" type="submit">Subscribe</button>
           </form>
