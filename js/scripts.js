@@ -12,8 +12,6 @@ var resetField= function() {
 }
 
 
-
-
 $(document).ready(function() {
   $('.form-inline').submit(function(event) {
     var email = $('#email').val();
