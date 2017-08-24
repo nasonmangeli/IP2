@@ -20,23 +20,17 @@
     <div class="container-fluid">
       <div class="row">
         <div class="landing">
-          <div class="navbar">
-            <button id="clickme"><img src="assets/nav.png" alt="nav"></button>
+          <div class="nav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="assets/nav.png" alt="nav"></span>
           </div>
-          <div class="navbar-menu">
-            <div class="row">
-              <div class="col-md-4">
-                <h1><a href="#menu">Menu</a></h1>
-              </div>
-              <div class="col-md-4">
-                <h1><a href="#events">Events</a></h1>
-              </div>
-              <div class="col-md-4">
-                <h1><a href="#contacts">Contacts</a></h1>
-              </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#menu">Menu</a>
+              <a href="#events">Events</a>
+              <a href="#contacts">Contacts</a>
             </div>
           </div>
-
           <img class="logo" src="assets/logoBig.png" alt="logo">
           <p>We Provide The Best Food </p>
           <p>At The <strong>Right Price</strong></p>
@@ -108,7 +102,6 @@
       <div class="row">
         <a name="menu"><div class="menu"></a>
           <div class="well">
-
           <ul class="nav nav-tabs nav-justified" role="tab-list">
             <li class="col-md-3 active"><a data-toggle="tab" href="#fastfood">Fast Food</a></li>
             <li class="col-md-3"><a data-toggle="tab" href="#drinks">Drinks</a></li>
@@ -176,11 +169,9 @@
             </div>
             <div id="chicken" class="tab-pane fade">
               <h3>chicken</h3>
-              <p>jaljlajl;jlajljaljlaljaljljaljlkajlajlkjaljaljjaljl;jdljfljdljflj</p>
             </div>
             <div id="rice" class="tab-pane fade">
               <h3>rice</h3>
-              <p>ljldjkdjdkjksjljsklsjlajlallalajkajlajl</p>
             </div>
           </div>
           </div>
@@ -215,13 +206,15 @@
       <div class="row">
         <div class="subscription">
         <p>Get our daily food items delivered to your email</p>
-        <form class="form-inline">
-          <div class="form-group">
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="Your email" class="form-control">
-            <button class="btn btn-default" type="submit">Subscribe</button>
+        <div id="subscribe">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Your email" class="form-control">
+            </div>
+              <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
           </form>
-
+            <h4 class="subdetails"></h4>
         </div>
         </div>
       </div>
@@ -230,7 +223,7 @@
       <div class="row">
         <a name="contacts"><div class="contact-bar"></a>
           <img src="assets/footerlogos/logo_white.png" alt="logo"><span>MENU</span>
-          <h4>Thats What We Are</h4>
+          <h3>Thats What We Are</h3>
           <img src="assets/footerlogos/facebook.png" alt="facebook">
           <img src="assets/footerlogos/twitter.png" alt="twitter">
           <img src="assets/footerlogos/pinterest.png" alt="pintrest">
