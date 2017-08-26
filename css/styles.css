@@ -285,16 +285,13 @@ text-align: center;
 }
 
 #email {
-  opacity: 0.3;
+  opacity: 0.5;
   border: 0px;
   height: 50px;
   width: 450px;
 
 }
 
-input::placeholder:{
-  color: white;
-}
 .subscription .btn-default {
   background-color: #F15A29;
   color: white;
