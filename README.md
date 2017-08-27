@@ -15,7 +15,7 @@ analytics. The text uses the google font Zilla Slab.
 
 ## Setup/Installation Requirements
 
-To view the the project one requires:
+To view the project one requires:
  * A *modern* browser that supports HTML5 such as Google chrome, Firefox, Operamini, IE or Safari.
  * Internet access.
  
@@ -27,6 +27,7 @@ To view the the project one requires:
 ## Technologies Used:
 * HTML
 * CSS
+* Javascript and Jquery
 * Bootstrap framework for Javascript and css
   
 ## Support and Contacts
